@@ -1,0 +1,15 @@
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
+cd demo_ws/
+source devel/setup.bash 
+roslaunch my_navigation my_navigation.launch
+
+
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
+
+
+https://automaticaddison.com/how-to-launch-the-turtlebot3-simulation-with-ros/
+
+
+

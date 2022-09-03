@@ -1,0 +1,28 @@
+1st shell
+cd ~
+roslaunch turtlebot3_gazebo turtlebot3_world.launch #launch Gazebo world and turtlebot3
+
+2nd shell
+cd demo_ws/
+source devel/setup.bash 
+roslaunch my_navigation my_navigation.launch # Start autonomous navigation with the map that is already saved
+
+3rd shell
+cd demo_ws/
+source devel/setup.bash 
+roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch # launch rviz
+
+# Now you can give navigation goals to turtlebot3 and it will reach them by avoiding obstacles (Use the '2D Nav Goal', purple arrow in rviz)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch # Control turtlebot3 with keypad
+roslaunch turtlebot3_gazebo turtlebot3_simulation.launch # Make turtlebot3 move in order to map autonomously the world
+
+-------------------------------------------------------------------------------------------------------------------------------------
+You may need to install some ros packages for the simulation, you can find more information in the next link.
+
+Source: https://automaticaddison.com/how-to-launch-the-turtlebot3-simulation-with-ros/
+
+
+
